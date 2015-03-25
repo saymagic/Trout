@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingTop="60dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_input_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="4dip"
+                    ripple:rv_color="@color/ripple_view_color"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_zoom="true">
+
+                    <cn.saymagic.digitcsu.ui.view.DeletableEditText
+                        android:id="@+id/input_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/account"
+                        android:drawableRight="@drawable/delete"
+                        android:ems="10"
+                        android:hint="请输入帐号名"
+                        android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/input_password"
+                        android:nextFocusForward="@+id/input_password"
+                        android:padding="1dp"
+                        android:singleLine="true">
+
+                        <requestFocus />
+                    </cn.saymagic.digitcsu.ui.view.DeletableEditText>
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_below="@+id/rv_input_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="4dip"
+                    ripple:rv_color="@color/ripple_view_color"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_zoom="true">
+
+                    <cn.saymagic.digitcsu.ui.view.DeletableEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:drawableLeft="@drawable/password"
+                        android:drawableRight="@drawable/delete"
+                        android:ems="10"
+                        android:hint="请输入密码"
+                        android:padding="1dp"
+                        android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </com.andexert.library.RippleView>
+
+            </RelativeLayout>
+
+            <com.andexert.library.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#FFFFFF"
+                ripple:rv_color="@color/ripple_view_color"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/main_color"
+                    android:text="登录"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:id="@+id/tv_try_to_loginout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/try_to_logout"
+                android:textColor="@color/main_color"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_login_waiting"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/frame_loading" />
+</RelativeLayout>

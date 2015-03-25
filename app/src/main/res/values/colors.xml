@@ -1,0 +1,7 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="ripple_view_color">#bbdefb</color>
+    <color name="background">#ffffffff</color>
+    <color name="main_color">#019587</color>
+    <color name="listview_bottom_line">#DFDFDF</color>
+</resources>

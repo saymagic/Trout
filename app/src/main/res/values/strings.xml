@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">登录助手</string>
+
+
+
+    <!--LoginActivity-->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="textview_empty">输入不能为空</string>
+    <string name="welcome_you">欢迎您</string>
+    <string name="try_to_logout"><u>已在线？尝试下线</u></string>
+    <string name="unknow_result_login_failed">未知原因登录失败</string>
+    <string name="login_success">登陆成功</string>
+    <string name="logout_success">下线成功</string>
+    <string name="unknow_result_logout_failed">未知原因下线失败</string>
+    <string name="not_connected_wifi">您未连接Wifi，暂无法使用</string>
+    <string name="goto_connect">设置网络</string>
+    <string name="cancel">取消</string>
+    <string name="logout_fail">下线失败，您可以尝试关闭网络五分钟</string>
+
+    <!--SplashActivity-->
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="tip">提示</string>
+    <string name="online_content_tip">似乎您已经在线或者未连接数字中南网络</string>
+    <string name="compulsion_login">强制登录</string>
+    <string name="exit">退出</string>
+    <string name="first_start_tip_content">您好，您是第一次使用，由于该应用适用人群明确，所以请您了解如下几点：\n
+                                            1.您是中南大学数字中南网络的用户  \n
+                                            2.使用之前，您已打开Wifi并连接数字中南网络  \n
+                                            3.本应用不会盗取您的密码，所有隐私数据都只会存储在本地手机里。 \n
+                                            </string>
+    <string name="goto_login">登陆</string>
+
+    <!--ShowResultActivity-->
+    <string name="logout">下线</string>
+    <string name="feedback_tip">欢迎您将使用过程中的问题反馈给我。</string>
+    <string name="about"><u>关于</u></string>
+    <string name="be_sure">确定</string>
+
+
+    <string-array name="about_array_tip">
+        <item>开发者</item>
+        <item>源码@GitHub</item>
+        <item>反馈</item>
+    </string-array>
+
+
+    <string-array name="login_tip">
+        <item>登陆成功</item>
+        <item>其他原因认证拒绝</item>
+        <item>用户连接已经存在</item>
+        <item>接入服器务繁忙，稍后重试</item>
+        <item>未知错误</item>
+        <item>认证响应超时</item>
+        <item>捕获用户网络地址错误</item>
+        <item>服务器网络连接异常</item>
+        <item>认证服务脚本执行异常</item>
+        <item>校验码错误</item>
+        <item>您的密码相对简单，帐号存在被盗风险，请及时修改成强度高的密码</item>
+        <item>无法获取您的网络地址,请确定您连接了数字中南的路由</item>
+        <item>无法获取您接入点设备地址,请确定您连接了数字中南的路由</item>
+        <item>无法获取您套餐信息</item>
+        <item>未知原因，登录失败</item>
+    </string-array>
+
+    <string-array name="logout_tip">
+        <item>下线成功</item>
+        <item>服务器拒绝请求</item>
+        <item>下线请求执行失败</item>
+        <item>您已经下线</item>
+        <item>服务器响应超时</item>
+        <item>后台网络连接异常</item>
+        <item>服务脚本执行异常</item>
+        <item>未知错误</item>
+    </string-array>
+</resources>
