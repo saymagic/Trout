@@ -2,7 +2,7 @@
 
 ## 介绍
 
-登陆助手支持数字中南电信网络一键登录，一键下线，解决因为手残关闭浏览器而不能及时断网的苦恼。项目在此开源，欢迎各位Coder来Pull Your Request。如果你对这款APP有什么建议和意见，欢迎到我的博客进行留言：[http://blog.saymagic.cn/2015/03/22/digit-csu.html](http://blog.saymagic.cn/2015/03/22/digit-csu.html)。
+登陆助手支持数字中南电信网络一键登录，一键下线，解决因为手残关闭浏览器而不能及时断网的苦恼。项目在此开源，欢迎各位Coder来Pull Your Request。如果你对这款APP有什么建议和意见，欢迎到我的博客进行留言：[http://blog.saymagic.cn](http://blog.saymagic.cn)。
 
 
 ## 下载方式
